@@ -13,6 +13,8 @@ Created by Ramandeep using Draw.io
 2.	Data Profiling (AWS Glue DataBrew)
 3.	Data Cleaning (City-Trf-Raman Bucket)
 4.	Data Pipeline Design (AWS Glue)
-<html>
-  hello how are you 
-</html>
+Step 1: Data Ingestion 
+For the data ingestion in my project, I used two S3 buckets: city-raw-raman and city-trf-raman. The purpose of this setup is to keep the workflow structured and organized.
+![image](https://github.com/user-attachments/assets/d6a656cc-3899-44c7-8059-bb5a74ccd961)
+
+
