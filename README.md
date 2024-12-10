@@ -1,5 +1,4 @@
-<span style="color:blue">This text is blue</span>
-<span style="color:red">This text is red</span>
+
 # Data-analytic-Raman
 This project is focused on designing and implementing a Data Analytic Platform (DAP) to analyze business licence datasets from the City of Vancouver.The dataset, is begins from 2024, provides insights into the licensing process governed by Licence By-Law No. 4450. 
 
