@@ -5,5 +5,14 @@ This analysis investigates the financial compliance of businesses in the "Busine
 ![image](https://github.com/user-attachments/assets/653b93c8-aa34-4d58-a27f-b29be515124a)
 Using the above visualization, we focus on the following descriptive analysis question:
 "Which local area in Vancouver has the highest number of businesses that have paid the required fee (FeePaid > 0) compared to those that have not (FeePaid = 0)?"
-***Using the structured draw.io diagram, the analysis follows a systematic approach:
+### Using the structured draw.io diagram, the analysis follows a systematic approach:
 ![image](https://github.com/user-attachments/assets/fba50c7e-d825-445d-941a-a3aebc32c800)
+Created by Ramandeep using Draw.io
+# Methodology
+1.	Data Ingestion (City-Raw-Raman Bucket)
+2.	Data Profiling (AWS Glue DataBrew)
+3.	Data Cleaning (City-Trf-Raman Bucket)
+4.	Data Pipeline Design (AWS Glue)
+<html>
+  hello how are you 
+</html>
