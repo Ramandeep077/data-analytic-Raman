@@ -60,7 +60,7 @@ The pipeline starts by ingesting the cleaned dataset stored in the city-trf-rama
 
   	![image](https://github.com/user-attachments/assets/6ddb97cd-b514-4a03-b8a3-786d9c340a90)
 
-   [Diagonis Analysis](Assignment2_predictive.ipynb)
+   ## [Predictive Analysis](Assignment2_predictive.ipynb)
    
 
 
