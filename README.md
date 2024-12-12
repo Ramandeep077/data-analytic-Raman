@@ -77,7 +77,45 @@ The pipeline starts by ingesting the cleaned dataset stored in the city-trf-rama
 
   	![image](https://github.com/user-attachments/assets/6ddb97cd-b514-4a03-b8a3-786d9c340a90)
 
-   ## [Predictive Analysis](Assignment2_predictive.ipynb)
+   ## [Diagnostic Analysis](Assignment2_predictive.ipynb)
+   
+   ### 📊 Diagnostic Analysis: Heart Disease Dataset
+
+**Project Title:** Diagnostic Analysis of Heart Disease Dataset
+
+**Project Description:** This project focuses on analyzing a dataset related to heart disease to understand its patterns and predict future outcomes. By leveraging advanced machine learning techniques, we aim to identify key risk factors and provide insights for early diagnosis and prevention.
+
+**Objective:** To diagnose and predict the presence of heart disease by exploring data patterns and leveraging predictive models to enhance understanding and prevention efforts.
+
+**Background:**
+Heart disease remains one of the leading health concerns globally. Early diagnosis and understanding of contributing factors can significantly improve patient outcomes. This project investigates a dataset containing key clinical, demographic, and medical history attributes to analyze and predict heart disease occurrences.
+<img width="464" alt="image" src="https://github.com/user-attachments/assets/f532b4f9-1bf4-4bda-b1cb-4cb23b8f4372" />
+**Dataset:**
+The dataset consists of 920 entries with 16 features, including:
+- **Patient Demographics:** Age and gender.
+- **Clinical Data:** Blood pressure (trestbps), cholesterol levels (chol), maximum heart rate achieved (thalach), and more.
+- **Medical History:** Chest pain types (cp), fasting blood sugar (fbs), exercise-induced angina (exang), and existing conditions (num).
+- **Data Details:** Some columns have missing values, such as slope, ca, and thal, which will be addressed during preprocessing.
+- <img width="331" alt="image" src="https://github.com/user-attachments/assets/6bcfefa0-038c-480a-bad9-525841d65c98" />
+
+
+**Methodology:**
+1. **Data Cleaning:** Handle missing values, normalize features, and encode categorical variables.
+2. **Exploratory Analysis:** Visualize data distributions and identify correlations between features and target outcomes.
+3. **Modeling:** Use K-Nearest Neighbors (KNN) and Decision Trees (DT) to predict the presence of heart disease.
+4. **Validation:** Evaluate models using accuracy, precision, recall, and F1 scores.
+
+**Tools and Technologies:**
+- **Programming Language:** Python
+- **Libraries:** Pandas, NumPy, Matplotlib, Scikit-learn
+- **Platform:** Colab notebook
+
+**Deliverables:**
+- A cleaned and preprocessed dataset ready for analysis.
+- Visualization and insights derived from the data.
+- Predictive models with evaluation metrics.
+- A detailed report summarizing findings and recommendations.
+
    
    
 
