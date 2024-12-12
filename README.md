@@ -2,7 +2,6 @@
 
 <img width="604" alt="image" src="https://github.com/user-attachments/assets/82bf721a-4935-44f6-934a-ce7959ebd23f" />
 
-# Data-analytic-Raman
 # Hi, I'm Ramandeep Kaur 👋
 
 
@@ -14,6 +13,8 @@
 ### 📧 Connect With Me:
 📩 **Email:** [khindakhinda54@gmail.com](mailto:khindakhinda54@gmail.com)
 
+# Start With First project
+# Data-analytic-Raman
 This project is focused on designing and implementing a Data Analytic Platform (DAP) to analyze business licence datasets from the City of Vancouver.The dataset, is begins from 2024, provides insights into the licensing process governed by Licence By-Law No. 4450. 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/1c617e9a-106d-4dd3-811d-e9150ebc31ce" />
 # Descriptive Analysis
@@ -77,6 +78,7 @@ The pipeline starts by ingesting the cleaned dataset stored in the city-trf-rama
   	![image](https://github.com/user-attachments/assets/6ddb97cd-b514-4a03-b8a3-786d9c340a90)
 
    ## [Predictive Analysis](Assignment2_predictive.ipynb)
+   
    
 
 
