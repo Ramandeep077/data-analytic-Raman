@@ -1,22 +1,18 @@
 
+
+<img width="604" alt="image" src="https://github.com/user-attachments/assets/82bf721a-4935-44f6-934a-ce7959ebd23f" />
+
 # Data-analytic-Raman
 # Hi, I'm Ramandeep Kaur 👋
+
 
 ### 👨‍💻 About Me:
 - 📚 I’m an MBA student with a background in engineering, specializing in Computer Science.
 - ☁️ Currently working on cloud computing projects using AWS and Python, exploring innovative solutions to real-world problems.
 - 🌟 Passionate about combining technology and creativity to drive impactful results.
-- 📫 How to reach me: [khindakhinda54@gmail.com](mailto:khindakhinda54@gmail.com).
 
-### 📂 Portfolio:
-Check out my portfolio: [Your Portfolio](https://yourportfolio.com)
-
----
-
-### 🛠️ Tools & Technologies:
-- Programming: ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-- Web Development: ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-- Version Control: ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
+### 📧 Connect With Me:
+📩 **Email:** [khindakhinda54@gmail.com](mailto:khindakhinda54@gmail.com)
 
 This project is focused on designing and implementing a Data Analytic Platform (DAP) to analyze business licence datasets from the City of Vancouver.The dataset, is begins from 2024, provides insights into the licensing process governed by Licence By-Law No. 4450. 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/1c617e9a-106d-4dd3-811d-e9150ebc31ce" />
