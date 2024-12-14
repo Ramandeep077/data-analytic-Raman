@@ -13,69 +13,139 @@
 ### 📧 Connect With Me:
 📩 **Email:** [khindakhinda54@gmail.com](mailto:khindakhinda54@gmail.com)
 
-# Start With First project
-# Data-analytic-Raman
-This project is focused on designing and implementing a Data Analytic Platform (DAP) to analyze business licence datasets from the City of Vancouver.The dataset, is begins from 2024, provides insights into the licensing process governed by Licence By-Law No. 4450. 
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/1c617e9a-106d-4dd3-811d-e9150ebc31ce" />
-# Descriptive Analysis
-This analysis investigates the financial compliance of businesses in the "Business Support Services" category within Vancouver.
-![image](https://github.com/user-attachments/assets/653b93c8-aa34-4d58-a27f-b29be515124a)
-Using the above visualization, we focus on the following descriptive analysis question:
-"Which local area in Vancouver has the highest number of businesses that have paid the required fee (FeePaid > 0) compared to those that have not (FeePaid = 0)?"
-### Using the structured draw.io diagram, the analysis follows a systematic approach:
-![image](https://github.com/user-attachments/assets/fba50c7e-d825-445d-941a-a3aebc32c800)
-Created by Ramandeep using Draw.io
-# Methodology
-1.	Data Ingestion (City-Raw-Raman Bucket)
-2.	Data Profiling (AWS Glue DataBrew)
-3.	Data Cleaning (City-Trf-Raman Bucket)
-4.	Data Pipeline Design (AWS Glue)
+# Data-Analytic-Raman
 
-## Step 1: Data Ingestion
-- 1.1.	city-raw-raman
-For the data ingestion in my project, I used two S3 buckets: city-raw-raman and city-trf-raman. The purpose of this setup is to keep the workflow structured and organized.
+## Descriptive Analysis
+
+### Project Title:
+**Designing and Implementing a Data Analytic Platform (DAP) for Vancouver City Business Licence Dataset**
+
+### Project Description:
+This project focuses on developing a Data Analytic Platform (DAP) to analyze business license datasets from the City of Vancouver. The dataset begins from 2024 and provides insights into the licensing process governed by Licence By-Law No. 4450. The primary goal is to investigate financial compliance in the "Business Support Services" category within Vancouver.
 ![image](https://github.com/user-attachments/assets/d6a656cc-3899-44c7-8059-bb5a74ccd961)
-Actual structure of Raw bucket is showing below:
-![image](https://github.com/user-attachments/assets/9002055e-74ce-4000-8c1d-5eba9966efee)
-Created by Ramandeep using Excel
-1.2.	city-trf-raman
-The city-trf-raman bucket stores all the transformed data, ready for analysis. This separation helps keep raw data untouched while ensuring cleaned data is optimized for querying, reporting, and analysis tasks.
- ![image](https://github.com/user-attachments/assets/b0a677cf-b319-4e43-b7bb-18a9e7e6dbb7)
-## Step:2-Data Profiling :
-During the data profiling phase for the Vancouver City business license project, AWS Glue DataBrew was utilized to analyze the raw data stored in the city-raw-raman bucket.
-Creating the Database
-![image](https://github.com/user-attachments/assets/a08cbb0c-95d8-4136-8f60-faf22e94c0d4)
-Profiling the Raw Data
-![image](https://github.com/user-attachments/assets/f4200453-c2d8-41e0-ad99-e7e269f360a5)
-Storing Profiling Results
-After completing the profiling, the results were exported to the raw-trf-raman bucket under the profiling folder. 
-![image](https://github.com/user-attachments/assets/d944cace-2937-4bb2-af2d-6cfc75f059f7)
-## Step:3-Data Cleaning 
-After completing the data profiling process, the next step was to clean the data for analysis and ensure it met the quality standards required for descriptive and exploratory analytics.
+### Objective:
+To systematically analyze and understand the compliance of businesses with the required license fees and identify trends in payment behaviors across local areas in Vancouver. The analysis provides actionable insights to enhance operational transparency and decision-making.
 
-![image](https://github.com/user-attachments/assets/6454984f-042c-4a05-9959-9d3fee0658fb)
-Running the Cleaning Job
+### Dataset:
+- **Raw Data:** Sourced from the city-raw-raman S3 bucket.
+- **Transformed Data:** Cleaned and prepared for analysis, stored in the city-trf-raman S3 bucket.
+- **Key Features:** FeePaid, LocalArea, BusinessCategory, among others.
 
-![image](https://github.com/user-attachments/assets/bff30be9-7f8d-4d8d-8e90-74b0bba23225)
-Data linkage for cleaning process:
+## Methodology
 
-![image](https://github.com/user-attachments/assets/6aa901be-4126-4e94-bd53-13e21adeeaf4)
-## Step:4: Data Pipeline
-The pipeline starts by ingesting the cleaned dataset stored in the city-trf-raman. AWS Glue Job was created to process the ingested data and prepare it for analysis:
-1.	Filtered businesses with valid Fee Paid data (Fee Paid >0).
-2.	Grouped businesses by Local Area.
-3.	Aggregated the number of businesses with:
-•	Fee Paid > 0 (Paid).
-•	Fee Paid = 0 (Unpaid).
-   -- Pipeline design
+### Step 1: Data Ingestion
+- **Buckets:**
+  - **city-raw-raman:** Stored raw, untouched data.
+  - **city-trf-raman:** Stored cleaned and transformed data for analysis.
+- Ensured a structured workflow to maintain data integrity.
 
-  	![image](https://github.com/user-attachments/assets/c87777e7-b356-4327-8ded-5fd8675d16b0)
-  	## Results
+![Data Ingestion Workflow](https://github.com/user-attachments/assets/d6a656cc-3899-44c7-8059-bb5a74ccd961)
 
-  	![image](https://github.com/user-attachments/assets/05d06178-1e63-4d9b-b6ea-5850966bfc0b)
-  	Job executed successfully
+### Step 2: Data Profiling
+- **Tool Used:** AWS Glue DataBrew.
+- **Process:**
+  - Created a database and analyzed raw data from city-raw-raman.
+  - Exported profiling results to city-trf-raman under the profiling folder.
 
-  	![image](https://github.com/user-attachments/assets/6ddb97cd-b514-4a03-b8a3-786d9c340a90)
+![Profiling Results](https://github.com/user-attachments/assets/f4200453-c2d8-41e0-ad99-e7e269f360a5)
+
+### Step 3: Data Cleaning
+- **Objective:** Address missing values, duplicates, and inconsistencies.
+- **Process:**
+  - Ran cleaning jobs using AWS Glue DataBrew.
+  - Linked cleaned data back to city-trf-raman for further processing.
+
+![Cleaning Workflow](https://github.com/user-attachments/assets/6454984f-042c-4a05-9959-9d3fee0658fb)
+
+### Step 4: Data Pipeline Design
+- **Tool Used:** AWS Glue.
+- **Process:**
+  1. Filtered businesses with FeePaid > 0.
+  2. Grouped businesses by Local Area.
+  3. Aggregated FeePaid data (Paid vs. Unpaid).
+
+![Pipeline Design](https://github.com/user-attachments/assets/c87777e7-b356-4327-8ded-5fd8675d16b0)
+
+## Results:
+
+### Descriptive Analysis Question:
+**"Which local area in Vancouver has the highest number of businesses that have paid the required fee (FeePaid > 0) compared to those that have not (FeePaid = 0)?"**
+
+### Key Findings:
+- Local area trends identified through descriptive statistics and visualizations.
+- Business compliance rates analyzed to support operational decision-making.
+
+![Results Visualization](https://github.com/user-attachments/assets/05d06178-1e63-4d9b-b6ea-5850966bfc0b)
+
+## Tools and Technologies
+- **AWS Services:** S3, Glue, Glue DataBrew.
+- **Visualization Tools:** Tableau, Draw.io.
+- **Programming Languages:** Python.
+
+---
+
+## Deliverables:
+1. A cleaned and transformed dataset stored in city-trf-raman.
+2. Profiling results exported for deeper insights.
+3. Visualizations highlighting compliance trends.
+4. A structured data pipeline for scalable analytics.
+
+This structured approach ensures that the analysis is comprehensive, actionable, and aligned with project goals.
+
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+   **2.Project Title:** Data Quality Control Initiative for Business Licence Analysis
+
+**Project Description:** This project focuses on implementing a robust data quality control process to ensure accurate, complete, and reliable datasets for analyzing business licences in Vancouver. The 2024 dataset offers insights into the licensing process governed by Licence By-Law No. 4450. Our goal is to establish a scalable system for maintaining data integrity and usability for meaningful insights.
+
+**Objective:** To establish a comprehensive data quality control framework that enhances data reliability, improves insights, and ensures compliance with data governance practices.
+
+**Background:**
+The City of Vancouver’s business licensing process involves complex data interactions. Inaccuracies or inconsistencies in datasets can lead to flawed insights. This project introduces measures like data enrichment, encryption, governance, and monitoring to mitigate such issues while optimizing data usability.
+
+**Scope:**
+The Data Quality Control Initiative emphasizes:
+- **Data Enrichment:** Ensuring raw data is structured and organized for processing.
+- **Data Protection:** Implementing encryption and redundancy to secure data.
+- **Data Governance:** Setting and enforcing quality standards for datasets.
+- **Data Observability:** Proactively monitoring data flow and quality metrics.
+
+**Methodology:**
+1. **Data Ingestion:**
+   - Extracted raw data from DynamoDB and loaded it into Amazon S3 for structured storage.
+   - Organized data into logical folders to ensure accessibility and clarity.
+2. **Data Profiling:**
+   - Analyzed data attributes to understand distributions, trends, and anomalies.
+   - Verified key metrics like completeness and uniqueness for all data fields.
+3. **Data Cleaning:**
+   - Addressed missing values and inconsistencies in critical fields like `status` and `licencesrn`.
+   - Standardized data formats to ensure compatibility with downstream processes.
+4. **Data Enrichment:**
+   - Enhanced datasets with additional attributes for improved analytical capabilities.
+   - Validated enriched data using SQL queries in Amazon Athena.
+5. **Data Protection:**
+   - Applied AWS KMS encryption to secure all S3 buckets.
+   - Enabled bucket versioning and established replication rules for data redundancy.
+6. **Data Governance:**
+   - Developed pipelines to evaluate data completeness (95%) and uniqueness (99%).
+   - Routed high-quality records to designated processing groups.
+7. **Data Observability:**
+   - Built dashboards to track data usage and flow.
+   - Configured alerts to detect anomalies in object counts or quality metrics.
+
+**Tools and Technologies:**
+- **Data Processing:** AWS S3, DynamoDB, Glue, Athena
+- **Security:** AWS KMS, S3 Replication, Versioning
+- **Monitoring:** CloudWatch Dashboards, Conditional Routers
+- **Programming:** Python, SQL
+
+**Deliverables:**
+- Enriched and validated datasets stored in S3.
+- Automated pipelines for data quality assurance.
+- Dashboards for monitoring data integrity and flow.
+- Secure and redundant data storage with KMS encryption and replication.
+- Comprehensive quality control report and insights.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
    ## [Diagnostic Analysis](Assignment2_predictive.ipynb)
    
