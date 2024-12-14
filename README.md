@@ -2,10 +2,6 @@
 # 🎉 Welcome to Ramandeep's Data Analytics Portfolio 🎉
 
 <img width="604" alt="image" src="https://github.com/user-attachments/assets/82bf721a-4935-44f6-934a-ce7959ebd23f" />
-
-# Hi, I'm Ramandeep Kaur 👋
-
-
 ### 👨‍💻 About Me:
 - 📚 I’m an MBA student with a background in engineering, specializing in Computer Science.
 - ☁️ Currently working on cloud computing projects using AWS and Python, exploring innovative solutions to real-world problems.
