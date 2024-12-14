@@ -22,7 +22,8 @@
 
 ### Project Description:
 This project focuses on developing a Data Analytic Platform (DAP) to analyze business license datasets from the City of Vancouver. The dataset begins from 2024 and provides insights into the licensing process governed by Licence By-Law No. 4450. The primary goal is to investigate financial compliance in the "Business Support Services" category within Vancouver.
-![image](https://github.com/user-attachments/assets/d6a656cc-3899-44c7-8059-bb5a74ccd961)
+<img width="943" alt="image" src="https://github.com/user-attachments/assets/eaea29c6-7c5d-453f-9e6b-d17c53638095" />
+
 ### Objective:
 To systematically analyze and understand the compliance of businesses with the required license fees and identify trends in payment behaviors across local areas in Vancouver. The analysis provides actionable insights to enhance operational transparency and decision-making.
 
@@ -93,7 +94,8 @@ To systematically analyze and understand the compliance of businesses with the r
 This structured approach ensures that the analysis is comprehensive, actionable, and aligned with project goals.
 
    ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-   **2.Project Title:** Data Quality Control Initiative for Business Licence Analysis
+
+   # 🌟 Project 2: DATA QUALITY CONTROL 🌟
 
 **Project Description:** This project focuses on implementing a robust data quality control process to ensure accurate, complete, and reliable datasets for analyzing business licences in Vancouver. The 2024 dataset offers insights into the licensing process governed by Licence By-Law No. 4450. Our goal is to establish a scalable system for maintaining data integrity and usability for meaningful insights.
 
@@ -120,23 +122,50 @@ The Data Quality Control Initiative emphasizes:
    - Addressed missing values and inconsistencies in critical fields like `status` and `licencesrn`.
    - Standardized data formats to ensure compatibility with downstream processes.
 4. **Data Enrichment:**
-   - Enhanced datasets with additional attributes for improved analytical capabilities.
-   - Validated enriched data using SQL queries in Amazon Athena.
+   - # Enhanced datasets with additional attributes for improved analytical capabilities.
+     ![image](https://github.com/user-attachments/assets/7d3ba2d0-c464-4520-8c5c-11b3633e5c8d)
+
+   - # Validated enriched data using SQL queries in Amazon Athena.
+     ![image](https://github.com/user-attachments/assets/c506e140-8b5b-4d41-875d-36a321493dba)
+
 5. **Data Protection:**
-   - Applied AWS KMS encryption to secure all S3 buckets.
-   - Enabled bucket versioning and established replication rules for data redundancy.
+   - # Applied AWS KMS encryption to secure all S3 buckets.
+     ![image](https://github.com/user-attachments/assets/eefcc72c-652c-486b-a01f-b21c1604a5db)
+     ![image](https://github.com/user-attachments/assets/ff62f9d4-d531-4a77-b139-3587f7809965)
+
+
+   - # Enabled bucket versioning and established replication rules for data redundancy.
+     ![image](https://github.com/user-attachments/assets/b7731463-3a01-4cfd-9b0b-9eb8cc1bccec)
+     ![image](https://github.com/user-attachments/assets/51457292-d2e1-4d1b-8004-4952b5323a95)
+     ![image](https://github.com/user-attachments/assets/2d089441-8301-47ac-96ae-28fcdcc0c922)
+
+
+
 6. **Data Governance:**
-   - Developed pipelines to evaluate data completeness (95%) and uniqueness (99%).
-   - Routed high-quality records to designated processing groups.
+   - # Developed pipelines to evaluate data completeness (95%) and uniqueness (99%).
+     ![image](https://github.com/user-attachments/assets/8a48c8b8-65d3-4140-9330-7c0cef0e9039)
+
+   - # Routed high-quality records to designated processing groups.
+     ![image](https://github.com/user-attachments/assets/f4ba696e-4c1e-4b6d-b59b-2573c5113cc0)
+     # Quality data 
+     ![image](https://github.com/user-attachments/assets/ec276997-9233-4b24-8454-0723a55a6acd)
+
+
 7. **Data Observability:**
    - Built dashboards to track data usage and flow.
+     ![image](https://github.com/user-attachments/assets/cdb6b53d-afda-4b35-a3c8-38129abcf88c)
+     ![image](https://github.com/user-attachments/assets/017946ec-0b46-4e2b-8fd3-ec221ae4b004)
+
+
    - Configured alerts to detect anomalies in object counts or quality metrics.
+   ![image](https://github.com/user-attachments/assets/7cb5f551-ab21-4088-8e52-9b0fb705695e)
+
 
 **Tools and Technologies:**
 - **Data Processing:** AWS S3, DynamoDB, Glue, Athena
 - **Security:** AWS KMS, S3 Replication, Versioning
 - **Monitoring:** CloudWatch Dashboards, Conditional Routers
-- **Programming:** Python, SQL
+- **Programming:**  SQL
 
 **Deliverables:**
 - Enriched and validated datasets stored in S3.
@@ -149,7 +178,7 @@ The Data Quality Control Initiative emphasizes:
 
    ## [Diagnostic Analysis](Assignment2_predictive.ipynb)
    
-   ### 📊 Diagnostic Analysis: Heart Disease Dataset
+   # 🚀  Diagnostic Analysis: Heart Disease Dataset 🚀 
 
 **Project Title:** Diagnostic Analysis of Heart Disease Dataset
 
