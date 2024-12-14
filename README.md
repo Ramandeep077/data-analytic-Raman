@@ -15,7 +15,7 @@
 
 # Data-Analytic-Raman
 
-## Descriptive Analysis
+# 📊Descriptive Analysis 📊
 
 ### Project Title:
 **Designing and Implementing a Data Analytic Platform (DAP) for Vancouver City Business Licence Dataset**
@@ -125,7 +125,7 @@ The Data Quality Control Initiative emphasizes:
    - ### Enhanced datasets with additional attributes for improved analytical capabilities.
      ![image](https://github.com/user-attachments/assets/7d3ba2d0-c464-4520-8c5c-11b3633e5c8d)
 
-   - # Validated enriched data using SQL queries in Amazon Athena.
+   - ### Validated enriched data using SQL queries in Amazon Athena.
      ![image](https://github.com/user-attachments/assets/c506e140-8b5b-4d41-875d-36a321493dba)
 
 5. **Data Protection:**
@@ -147,7 +147,7 @@ The Data Quality Control Initiative emphasizes:
 
    - ### Routed high-quality records to designated processing groups.
      ![image](https://github.com/user-attachments/assets/f4ba696e-4c1e-4b6d-b59b-2573c5113cc0)
-     # Quality data 
+     ### Quality data 
      ![image](https://github.com/user-attachments/assets/ec276997-9233-4b24-8454-0723a55a6acd)
 
 
