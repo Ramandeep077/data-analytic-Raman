@@ -178,7 +178,7 @@ The Data Quality Control Initiative emphasizes:
 
    ## [Diagnostic Analysis](Assignment2_predictive.ipynb)
    
-   # 🚀  Diagnostic Analysis: Heart Disease Dataset 🚀 
+   # 🚀  Project 3: Diagnostic Analysis: Heart Disease Dataset 🚀 
 
 **Project Title:** Diagnostic Analysis of Heart Disease Dataset
 
@@ -215,8 +215,78 @@ The dataset consists of 920 entries with 16 features, including:
 - Predictive models with evaluation metrics.
 - A detailed report summarizing findings and recommendations.
 
-   
-   
+  # 🔍 Project 4: Exploratory Data Analysis 🔍
+
+### Project Title:
+**Investigating Financial Dynamics of Business Licenses in Vancouver**
+
+### Project Description:
+This exploratory analysis investigates the financial dynamics of businesses in Vancouver across different statuses. The key focus is on analyzing the average license fee of 'Issued' businesses compared to total license fees from other statuses, including 'Inactive', 'Pending', and 'Gone Out of Business'.
+![image](https://github.com/user-attachments/assets/71966bf3-9ea5-4da0-86c2-46c2e030eddf)
+
+### Objective:
+To uncover insights into the financial dynamics of business license fees in Vancouver, providing comparative analysis and identifying patterns across business statuses.
+
+### Dataset:
+- **Sources:** City of Vancouver business license data.
+- **Bucket Name:** city-busi-exp-raman
+- **Folder Structure:** profiling/, cleaning/
+  ![image](https://github.com/user-attachments/assets/adc0421d-c6db-45c7-b11a-d59be572c418)
+
+- **Key Metrics:** Average license fee, total license fees, and percentages.
+
+
+## Methodology
+
+### Step 1: Data Ingestion
+- Created a dedicated bucket (city-busi-exp-raman) to store data specifically for exploratory analysis.
+- Ingested data from the raw dataset and structured it for analysis.
+
+### Step 2: Data Profiling
+- Conducted profiling to assess data quality and identify patterns.
+- Exported results to city-busi-exp-raman/profiling/ for further analysis.
+  ![image](https://github.com/user-attachments/assets/aad30c49-03c2-48f2-a2ab-5bbaadfe0ffc)
+
+
+### Step 3: Data Cleaning
+- Applied over 20 transformations to clean and prepare data.
+- Ensured consistency with recipes developed for descriptive analysis.
+  ![image](https://github.com/user-attachments/assets/4f121b29-ad76-449c-b6ac-64076c2bc65b)
+  ![image](https://github.com/user-attachments/assets/6f4b9eb3-fd04-4745-b763-b60b36c307d4)
+
+
+### Step 4: Data Pipeline
+- Designed a pipeline to merge key metrics:
+  - Calculated the average license fee for 'Issued' businesses.
+  - Aggregated total fees for other statuses.
+  - Computed the percentage of fees paid (PercentagePaid).
+![image](https://github.com/user-attachments/assets/95a877c4-7fc3-4c3c-b5ac-7685a2ad4f74)
+
+
+## Results:
+
+### Key Findings:
+- **Average Fee (Issued):** $146.8
+- **Total Fee (All Statuses):** $5872
+  ![image](https://github.com/user-attachments/assets/1e70f098-133c-4b7b-8d75-ee1590da1542)
+
+- 'Issued' businesses represent the majority of total fees collected, highlighting compliance trends.
+
+
+## Tools and Technologies
+- **Data Management:** AWS S3, Glue, Glue DataBrew
+- **Analysis Tools:** Amazon Athena
+- **Programming:** Sql
+
+
+## Deliverables:
+1. Cleaned and profiled datasets stored in city-busi-exp-raman.
+2. Merged dataset with key metrics for analysis.
+3. Visualizations and comparative insights into financial dynamics.
+4. Summary report highlighting trends and patterns.
+
+---
+
 
 
 
