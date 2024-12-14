@@ -1,4 +1,5 @@
 
+# 🎉 Welcome to Ramandeep's Data Analytics Portfolio 🎉
 
 <img width="604" alt="image" src="https://github.com/user-attachments/assets/82bf721a-4935-44f6-934a-ce7959ebd23f" />
 
@@ -286,7 +287,8 @@ To uncover insights into the financial dynamics of business license fees in Vanc
 4. Summary report highlighting trends and patterns.
 
 ---
-
+# Thank you :)
+![Thank You](https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif)
 
 
 
